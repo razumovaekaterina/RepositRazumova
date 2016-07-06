@@ -16,30 +16,9 @@ namespace calculator
         {
             InitializeComponent();
         }
-    
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Button_Click(BtnAdd, e);
-        }
 
-        private void BtnSub_Click(object sender, EventArgs e)
-        {
-            Button_Click(BtnSub, e);
-        }
 
-        private void BtnMul_Click(object sender, EventArgs e)
-        {
-            Button_Click(BtnMul, e);
-        }
-
-        private void BtnDiv_Click(object sender, EventArgs e)
-        {
-
-            Button_Click(BtnDiv, e);
-        }
-    
-
-    private void Button_Click(object sender, EventArgs e)
+        private void Button_Click(object sender, EventArgs e)
         {
 
             double first = Convert.ToDouble(TBArg1.Text);
@@ -48,20 +27,20 @@ namespace calculator
             switch (((Button)sender).Name)
             {
                 case "BtnAdd":
-	                result = first + second;
-		            break;
-	            case "BtnSub":
-	                result = first - second;
-		            break;
-	            case "BtnMul":
-	                result = first * second;
-		            break;
-	            case "BtnDiv":
-	                result = first / second;
-		            break;
-	            default:
+                    result = first + second;
+                    break;
+                case "BtnSub":
+                    result = first - second;
+                    break;
+                case "BtnMul":
+                    result = first * second;
+                    break;
+                case "BtnDiv":
+                    result = first / second;
+                    break;
+                default:
                     throw new Exception("Неизвестная операция");
-  
+
             }
             TBRes.Text = result.ToString();
         }

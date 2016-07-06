@@ -80,7 +80,7 @@
             this.BtnAdd.TabIndex = 4;
             this.BtnAdd.Text = "+";
             this.BtnAdd.UseVisualStyleBackColor = true;
-            this.BtnAdd.Click += new System.EventHandler(this.button1_Click);
+            this.BtnAdd.Click += new System.EventHandler(this.Button_Click);
             // 
             // BtnSub
             // 
@@ -90,7 +90,7 @@
             this.BtnSub.TabIndex = 5;
             this.BtnSub.Text = "-";
             this.BtnSub.UseVisualStyleBackColor = true;
-            this.BtnSub.Click += new System.EventHandler(this.BtnSub_Click);
+            this.BtnSub.Click += new System.EventHandler(this.Button_Click);
             // 
             // BtnMul
             // 
@@ -100,7 +100,7 @@
             this.BtnMul.TabIndex = 6;
             this.BtnMul.Text = "*";
             this.BtnMul.UseVisualStyleBackColor = true;
-            this.BtnMul.Click += new System.EventHandler(this.BtnMul_Click);
+            this.BtnMul.Click += new System.EventHandler(this.Button_Click);
             // 
             // BtnDiv
             // 
@@ -110,7 +110,7 @@
             this.BtnDiv.TabIndex = 7;
             this.BtnDiv.Text = "/";
             this.BtnDiv.UseVisualStyleBackColor = true;
-            this.BtnDiv.Click += new System.EventHandler(this.BtnDiv_Click);
+            this.BtnDiv.Click += new System.EventHandler(this.Button_Click);
             // 
             // TBRes
             // 
