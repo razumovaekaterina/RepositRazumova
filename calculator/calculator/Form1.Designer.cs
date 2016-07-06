@@ -76,19 +76,19 @@
             // 
             this.BtnAdd.Location = new System.Drawing.Point(221, 30);
             this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(73, 23);
+            this.BtnAdd.Size = new System.Drawing.Size(23, 23);
             this.BtnAdd.TabIndex = 4;
-            this.BtnAdd.Text = "Сложение";
+            this.BtnAdd.Text = "+";
             this.BtnAdd.UseVisualStyleBackColor = true;
             this.BtnAdd.Click += new System.EventHandler(this.button1_Click);
             // 
             // BtnSub
             // 
-            this.BtnSub.Location = new System.Drawing.Point(310, 30);
+            this.BtnSub.Location = new System.Drawing.Point(276, 30);
             this.BtnSub.Name = "BtnSub";
-            this.BtnSub.Size = new System.Drawing.Size(73, 23);
+            this.BtnSub.Size = new System.Drawing.Size(23, 23);
             this.BtnSub.TabIndex = 5;
-            this.BtnSub.Text = "Вычитание";
+            this.BtnSub.Text = "-";
             this.BtnSub.UseVisualStyleBackColor = true;
             this.BtnSub.Click += new System.EventHandler(this.BtnSub_Click);
             // 
@@ -96,25 +96,25 @@
             // 
             this.BtnMul.Location = new System.Drawing.Point(221, 86);
             this.BtnMul.Name = "BtnMul";
-            this.BtnMul.Size = new System.Drawing.Size(73, 23);
+            this.BtnMul.Size = new System.Drawing.Size(23, 23);
             this.BtnMul.TabIndex = 6;
-            this.BtnMul.Text = "Умножение";
+            this.BtnMul.Text = "*";
             this.BtnMul.UseVisualStyleBackColor = true;
             this.BtnMul.Click += new System.EventHandler(this.BtnMul_Click);
             // 
             // BtnDiv
             // 
-            this.BtnDiv.Location = new System.Drawing.Point(310, 86);
+            this.BtnDiv.Location = new System.Drawing.Point(276, 86);
             this.BtnDiv.Name = "BtnDiv";
-            this.BtnDiv.Size = new System.Drawing.Size(73, 23);
+            this.BtnDiv.Size = new System.Drawing.Size(23, 23);
             this.BtnDiv.TabIndex = 7;
-            this.BtnDiv.Text = "Деление";
+            this.BtnDiv.Text = "/";
             this.BtnDiv.UseVisualStyleBackColor = true;
             this.BtnDiv.Click += new System.EventHandler(this.BtnDiv_Click);
             // 
             // TBRes
             // 
-            this.TBRes.Location = new System.Drawing.Point(126, 161);
+            this.TBRes.Location = new System.Drawing.Point(15, 159);
             this.TBRes.Name = "TBRes";
             this.TBRes.Size = new System.Drawing.Size(183, 20);
             this.TBRes.TabIndex = 8;
@@ -122,7 +122,7 @@
             // LblRes
             // 
             this.LblRes.AutoSize = true;
-            this.LblRes.Location = new System.Drawing.Point(123, 134);
+            this.LblRes.Location = new System.Drawing.Point(17, 138);
             this.LblRes.Name = "LblRes";
             this.LblRes.Size = new System.Drawing.Size(59, 13);
             this.LblRes.TabIndex = 9;
@@ -132,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(440, 193);
+            this.ClientSize = new System.Drawing.Size(323, 193);
             this.Controls.Add(this.LblRes);
             this.Controls.Add(this.TBRes);
             this.Controls.Add(this.BtnDiv);
@@ -144,7 +144,7 @@
             this.Controls.Add(this.TBArg2);
             this.Controls.Add(this.TBArg1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Калькулятор";
             this.ResumeLayout(false);
             this.PerformLayout();
 
