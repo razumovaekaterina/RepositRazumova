@@ -38,6 +38,8 @@
             this.BtnDiv = new System.Windows.Forms.Button();
             this.TBRes = new System.Windows.Forms.TextBox();
             this.LblRes = new System.Windows.Forms.Label();
+            this.BtnCos = new System.Windows.Forms.Button();
+            this.BtnSin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TBArg1
@@ -128,11 +130,33 @@
             this.LblRes.TabIndex = 9;
             this.LblRes.Text = "Результат";
             // 
+            // BtnCos
+            // 
+            this.BtnCos.Location = new System.Drawing.Point(327, 86);
+            this.BtnCos.Name = "BtnCos";
+            this.BtnCos.Size = new System.Drawing.Size(38, 23);
+            this.BtnCos.TabIndex = 10;
+            this.BtnCos.Text = "Cos";
+            this.BtnCos.UseVisualStyleBackColor = true;
+            this.BtnCos.Click += new System.EventHandler(this.Button_Click2);
+            // 
+            // BtnSin
+            // 
+            this.BtnSin.Location = new System.Drawing.Point(327, 30);
+            this.BtnSin.Name = "BtnSin";
+            this.BtnSin.Size = new System.Drawing.Size(38, 23);
+            this.BtnSin.TabIndex = 11;
+            this.BtnSin.Text = "Sin";
+            this.BtnSin.UseVisualStyleBackColor = true;
+            this.BtnSin.Click += new System.EventHandler(this.Button_Click2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(323, 193);
+            this.ClientSize = new System.Drawing.Size(406, 193);
+            this.Controls.Add(this.BtnSin);
+            this.Controls.Add(this.BtnCos);
             this.Controls.Add(this.LblRes);
             this.Controls.Add(this.TBRes);
             this.Controls.Add(this.BtnDiv);
@@ -162,6 +186,8 @@
         private System.Windows.Forms.Button BtnDiv;
         private System.Windows.Forms.TextBox TBRes;
         private System.Windows.Forms.Label LblRes;
+        private System.Windows.Forms.Button BtnCos;
+        private System.Windows.Forms.Button BtnSin;
     }
 }
 
