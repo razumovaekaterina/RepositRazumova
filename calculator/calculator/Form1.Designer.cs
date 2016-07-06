@@ -40,6 +40,12 @@
             this.LblRes = new System.Windows.Forms.Label();
             this.BtnCos = new System.Windows.Forms.Button();
             this.BtnSin = new System.Windows.Forms.Button();
+            this.BtnTg = new System.Windows.Forms.Button();
+            this.BtnCtg = new System.Windows.Forms.Button();
+            this.BtnPowSquare = new System.Windows.Forms.Button();
+            this.BtnRootSquare = new System.Windows.Forms.Button();
+            this.BtnPow = new System.Windows.Forms.Button();
+            this.BtnRoot = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TBArg1
@@ -51,7 +57,7 @@
             // 
             // TBArg2
             // 
-            this.TBArg2.Location = new System.Drawing.Point(12, 86);
+            this.TBArg2.Location = new System.Drawing.Point(12, 80);
             this.TBArg2.Name = "TBArg2";
             this.TBArg2.Size = new System.Drawing.Size(183, 20);
             this.TBArg2.TabIndex = 1;
@@ -68,7 +74,7 @@
             // LblArg2
             // 
             this.LblArg2.AutoSize = true;
-            this.LblArg2.Location = new System.Drawing.Point(12, 67);
+            this.LblArg2.Location = new System.Drawing.Point(12, 61);
             this.LblArg2.Name = "LblArg2";
             this.LblArg2.Size = new System.Drawing.Size(64, 13);
             this.LblArg2.TabIndex = 3;
@@ -86,7 +92,7 @@
             // 
             // BtnSub
             // 
-            this.BtnSub.Location = new System.Drawing.Point(276, 30);
+            this.BtnSub.Location = new System.Drawing.Point(250, 30);
             this.BtnSub.Name = "BtnSub";
             this.BtnSub.Size = new System.Drawing.Size(23, 23);
             this.BtnSub.TabIndex = 5;
@@ -96,7 +102,7 @@
             // 
             // BtnMul
             // 
-            this.BtnMul.Location = new System.Drawing.Point(221, 86);
+            this.BtnMul.Location = new System.Drawing.Point(221, 80);
             this.BtnMul.Name = "BtnMul";
             this.BtnMul.Size = new System.Drawing.Size(23, 23);
             this.BtnMul.TabIndex = 6;
@@ -106,7 +112,7 @@
             // 
             // BtnDiv
             // 
-            this.BtnDiv.Location = new System.Drawing.Point(276, 86);
+            this.BtnDiv.Location = new System.Drawing.Point(250, 80);
             this.BtnDiv.Name = "BtnDiv";
             this.BtnDiv.Size = new System.Drawing.Size(23, 23);
             this.BtnDiv.TabIndex = 7;
@@ -116,7 +122,7 @@
             // 
             // TBRes
             // 
-            this.TBRes.Location = new System.Drawing.Point(15, 159);
+            this.TBRes.Location = new System.Drawing.Point(169, 146);
             this.TBRes.Name = "TBRes";
             this.TBRes.Size = new System.Drawing.Size(183, 20);
             this.TBRes.TabIndex = 8;
@@ -124,7 +130,7 @@
             // LblRes
             // 
             this.LblRes.AutoSize = true;
-            this.LblRes.Location = new System.Drawing.Point(17, 138);
+            this.LblRes.Location = new System.Drawing.Point(226, 130);
             this.LblRes.Name = "LblRes";
             this.LblRes.Size = new System.Drawing.Size(59, 13);
             this.LblRes.TabIndex = 9;
@@ -132,7 +138,7 @@
             // 
             // BtnCos
             // 
-            this.BtnCos.Location = new System.Drawing.Point(327, 86);
+            this.BtnCos.Location = new System.Drawing.Point(420, 80);
             this.BtnCos.Name = "BtnCos";
             this.BtnCos.Size = new System.Drawing.Size(38, 23);
             this.BtnCos.TabIndex = 10;
@@ -142,7 +148,7 @@
             // 
             // BtnSin
             // 
-            this.BtnSin.Location = new System.Drawing.Point(327, 30);
+            this.BtnSin.Location = new System.Drawing.Point(420, 30);
             this.BtnSin.Name = "BtnSin";
             this.BtnSin.Size = new System.Drawing.Size(38, 23);
             this.BtnSin.TabIndex = 11;
@@ -150,11 +156,77 @@
             this.BtnSin.UseVisualStyleBackColor = true;
             this.BtnSin.Click += new System.EventHandler(this.Button_Click2);
             // 
+            // BtnTg
+            // 
+            this.BtnTg.Location = new System.Drawing.Point(464, 30);
+            this.BtnTg.Name = "BtnTg";
+            this.BtnTg.Size = new System.Drawing.Size(38, 23);
+            this.BtnTg.TabIndex = 13;
+            this.BtnTg.Text = "Tg";
+            this.BtnTg.UseVisualStyleBackColor = true;
+            this.BtnTg.Click += new System.EventHandler(this.Button_Click2);
+            // 
+            // BtnCtg
+            // 
+            this.BtnCtg.Location = new System.Drawing.Point(464, 80);
+            this.BtnCtg.Name = "BtnCtg";
+            this.BtnCtg.Size = new System.Drawing.Size(38, 23);
+            this.BtnCtg.TabIndex = 12;
+            this.BtnCtg.Text = "Ctg";
+            this.BtnCtg.UseVisualStyleBackColor = true;
+            this.BtnCtg.Click += new System.EventHandler(this.Button_Click2);
+            // 
+            // BtnPowSquare
+            // 
+            this.BtnPowSquare.Location = new System.Drawing.Point(293, 30);
+            this.BtnPowSquare.Name = "BtnPowSquare";
+            this.BtnPowSquare.Size = new System.Drawing.Size(50, 23);
+            this.BtnPowSquare.TabIndex = 15;
+            this.BtnPowSquare.Text = "x^2";
+            this.BtnPowSquare.UseVisualStyleBackColor = true;
+            this.BtnPowSquare.Click += new System.EventHandler(this.Button_Click2);
+            // 
+            // BtnRootSquare
+            // 
+            this.BtnRootSquare.Location = new System.Drawing.Point(293, 80);
+            this.BtnRootSquare.Name = "BtnRootSquare";
+            this.BtnRootSquare.Size = new System.Drawing.Size(50, 23);
+            this.BtnRootSquare.TabIndex = 14;
+            this.BtnRootSquare.Text = "x^(1/2)";
+            this.BtnRootSquare.UseVisualStyleBackColor = true;
+            this.BtnRootSquare.Click += new System.EventHandler(this.Button_Click2);
+            // 
+            // BtnPow
+            // 
+            this.BtnPow.Location = new System.Drawing.Point(349, 30);
+            this.BtnPow.Name = "BtnPow";
+            this.BtnPow.Size = new System.Drawing.Size(50, 23);
+            this.BtnPow.TabIndex = 17;
+            this.BtnPow.Text = "x^y";
+            this.BtnPow.UseVisualStyleBackColor = true;
+            this.BtnPow.Click += new System.EventHandler(this.Button_Click);
+            // 
+            // BtnRoot
+            // 
+            this.BtnRoot.Location = new System.Drawing.Point(349, 80);
+            this.BtnRoot.Name = "BtnRoot";
+            this.BtnRoot.Size = new System.Drawing.Size(50, 23);
+            this.BtnRoot.TabIndex = 16;
+            this.BtnRoot.Text = "x^(1/y)";
+            this.BtnRoot.UseVisualStyleBackColor = true;
+            this.BtnRoot.Click += new System.EventHandler(this.Button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 193);
+            this.ClientSize = new System.Drawing.Size(523, 178);
+            this.Controls.Add(this.BtnPow);
+            this.Controls.Add(this.BtnRoot);
+            this.Controls.Add(this.BtnPowSquare);
+            this.Controls.Add(this.BtnRootSquare);
+            this.Controls.Add(this.BtnTg);
+            this.Controls.Add(this.BtnCtg);
             this.Controls.Add(this.BtnSin);
             this.Controls.Add(this.BtnCos);
             this.Controls.Add(this.LblRes);
@@ -188,6 +260,12 @@
         private System.Windows.Forms.Label LblRes;
         private System.Windows.Forms.Button BtnCos;
         private System.Windows.Forms.Button BtnSin;
+        private System.Windows.Forms.Button BtnTg;
+        private System.Windows.Forms.Button BtnCtg;
+        private System.Windows.Forms.Button BtnPowSquare;
+        private System.Windows.Forms.Button BtnRootSquare;
+        private System.Windows.Forms.Button BtnPow;
+        private System.Windows.Forms.Button BtnRoot;
     }
 }
 

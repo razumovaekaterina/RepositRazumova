@@ -16,6 +16,10 @@ namespace calculator
                     return new Mul();
                 case "BtnDiv":
                     return new Div();
+                case "BtnPow":
+                    return new Pow();
+                case "BtnRoot":
+                    return new Root();
                 default:
                     throw new Exception("Неизвестная операция");
 

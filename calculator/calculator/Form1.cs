@@ -37,5 +37,7 @@ namespace calculator
             double result = calculator.Calculate(first); ;
             TBRes.Text = result.ToString();
         }
+
+      
     }
 }
