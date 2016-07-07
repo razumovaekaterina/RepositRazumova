@@ -1,16 +1,27 @@
-﻿using NUnit.Framework;
+﻿using System;
+using calculator.TwoArguments;
+using NUnit.Framework;
 
-namespace calculator.Tests
+namespace calculator.Tests.TwoArgumentsTests
 {
     [TestFixture]
     public class DivTests
     {
-        [Test]
-        public void DivTest()
+        [TestCase(-20, -100, 0.2)]
+        [TestCase(14, 2, 7)]
+        [TestCase(-1000, 100, -10)]
+        public void CalculateTest(double first, double second, double expected)
         {
-            ITwoArgumentCalculator calculator = new Div();
-            double result = calculator.Calculate(2, 5);
-            Assert.AreEqual(10, result);
-        }  
+            var calculator = new Div();
+            var result = calculator.Calculate(first, second);
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void DivisionByZeroTest()
+        {
+            var calculator = new Div();
+            Assert.Throws<Exception>(() => calculator.Calculate(3464, 0));
+        }
     }
 }

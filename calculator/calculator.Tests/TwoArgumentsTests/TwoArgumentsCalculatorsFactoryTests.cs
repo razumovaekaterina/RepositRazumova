@@ -1,17 +1,18 @@
 ﻿using System;
+using calculator.TwoArguments;
 using NUnit.Framework;
 
-namespace calculator.Tests
+namespace calculator.Tests.TwoArgumentsTests
 {
     [TestFixture]
     public class TwoArgumentsCalculatorsFactoryTests
     {
-        [TestCase("Add", typeof(Add))]
-        [TestCase("Sub", typeof(Sub))]
-        [TestCase("Mul", typeof(Mul))]
-        [TestCase("Div", typeof(Div))]
-        [TestCase("Pow", typeof(Pow))]
-        [TestCase("Root", typeof(Root))]
+        [TestCase("BtnAdd", typeof(Add))]
+        [TestCase("BtnSub", typeof(Sub))]
+        [TestCase("BtnMul", typeof(Mul))]
+        [TestCase("BtnDiv", typeof(Div))]
+        [TestCase("BtnPow", typeof(Pow))]
+        [TestCase("BtnRoot", typeof(Root))]
         public void MulTest(string name, Type type)
         {
             ITwoArgumentCalculator calculator = TwoArgumentsCalculatorsFactory.CreateCalculator(name);

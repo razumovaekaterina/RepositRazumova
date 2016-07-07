@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace calculator
+namespace calculator.TwoArguments
 {
     public class Pow:ITwoArgumentCalculator
     {

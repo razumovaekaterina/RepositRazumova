@@ -1,16 +1,19 @@
-﻿using NUnit.Framework;
+﻿using calculator.TwoArguments;
+using NUnit.Framework;
 
-namespace calculator.Tests
+namespace calculator.Tests.TwoArgumentsTests
 {
     public class AddTests
     {
-        [Test]
-        public void AddTest()
+
+        [TestCase(0, 0, 0)]
+        [TestCase(3, 4, 7)]
+        [TestCase(-7, -2, -9)]
+        public void CalculateTest(double first, double second, double expected)
         {
-            ITwoArgumentCalculator calculator = new Add();
-            double result = calculator.Calculate(2, 5);
-            Assert.AreEqual(7, result);
+            var calculator = new Add();
+            var result = calculator.Calculate(first, second);
+            Assert.AreEqual(expected, result);
         }
- 
     }
 }

@@ -1,16 +1,20 @@
-﻿using NUnit.Framework;
+﻿using calculator.OneArgument;
+using NUnit.Framework;
 
-namespace calculator.Tests
+namespace calculator.Tests.OneArgumentTests
 {
     [TestFixture]
     public class PowSquareTests
     {
-        [Test]
-        public void PowSquareTest()
+        [TestCase(-1, 1)]
+        [TestCase(4, 16)]
+        [TestCase(88, 7744)]
+        public void CalculateTest(double first, double expected)
         {
-            IOneArgumentCalculator calculator = new PowSquare();
-            double result = calculator.Calculate(4);
-            Assert.AreEqual(16, result);
-        } 
+            var calculator = new PowSquare();
+            var result = calculator.Calculate(first);
+            Assert.AreEqual(expected, result);
+        }
+
     }
 }

@@ -1,16 +1,19 @@
-﻿using NUnit.Framework;
+﻿using calculator.TwoArguments;
+using NUnit.Framework;
 
-namespace calculator.Tests
+namespace calculator.Tests.TwoArgumentsTests
 {
     [TestFixture]
     public class MulTests
     {
-        [Test]
-        public void MulTest()
+        [TestCase(-20, -10, 200)]
+        [TestCase(14, 2, 28)]
+        [TestCase(-5, 100, -500)]
+        public void CalculateTest(double first, double second, double expected)
         {
-            ITwoArgumentCalculator calculator = new Mul();
-            double result = calculator.Calculate(2, 5);
-            Assert.AreEqual(10, result);
-        } 
+            var calculator = new Mul();
+            var result = calculator.Calculate(first, second);
+            Assert.AreEqual(expected, result);
+        }
     }
 }

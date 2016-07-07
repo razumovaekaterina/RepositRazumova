@@ -1,18 +1,20 @@
-﻿using System;
+﻿using calculator.OneArgument;
 using NUnit.Framework;
 
-namespace calculator.Tests
+namespace calculator.Tests.OneArgumentTests
 {
     [TestFixture]
     public class TgTests
     {
-        [Test]
-        public void TgTest()
-        {
-            IOneArgumentCalculator calculator = new Tg();
-            double result = calculator.Calculate(1);
-            Assert.AreEqual(1.55741, result);
 
+        [TestCase(1, 1.55741)]
+        [TestCase(-1, -1.55741)]
+        [TestCase(9, -0.45232)]
+        public void CalculateTest(double first, double expected)
+        {
+            var calculator = new Tg();
+            var result = calculator.Calculate(first);
+            Assert.AreEqual(expected, result, 0.00001);
         }
     }
 }
